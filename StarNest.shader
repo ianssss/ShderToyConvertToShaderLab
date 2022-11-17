@@ -14,7 +14,6 @@ Shader "Hidden/StarNest"
         _Darkmatter("Darkmatter",float) = 0.300
         _Distfading("Distfading",float) = 0.730
         _Saturation("Saturation",float) = 0.850
-        _iMouse("iMouse",vector) = (0,0,0,0)
     }
 
     SubShader
@@ -29,7 +28,6 @@ Shader "Hidden/StarNest"
             #pragma fragment frag
             #include "UnityCG.cginc"
 
-            float4 _iMouse;
             int _Iterations,_Volsteps;
             float _Formuparam,_Stepsize,_Zoom,_Tile,_Speed,_Brightness,_Darkmatter,_Distfading,_Saturation;
 
